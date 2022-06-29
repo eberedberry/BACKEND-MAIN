@@ -37,3 +37,4 @@ if data >= 18:
     print("You can vote")
 else:
     print("Go back to your house. No be small children ")
+
