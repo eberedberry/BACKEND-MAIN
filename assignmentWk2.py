@@ -5,8 +5,8 @@ import math
 num1 = int(input("Please input First number :"))
 num2 = int(input("Please input Second number :"))
 num3 = int(input("Please input Third number :"))
-sum = num1 + num2 + num3
-ave = float(sum) /3
+sum1 = num1 + num2 + num3
+ave = float(sum1) /3
 print("The average is {}".format(ave))
 
 
@@ -18,6 +18,12 @@ rest_sentence = (sentence[1])
 first_word = sentence[0].upper()
 new_sentence = "{} {}".format(first_word, rest_sentence)
 print(new_sentence)
+
+### OR NO 2
+user = input("enter your sentences: ")
+a = user.split()
+a[0] = a[0].upper()
+print(" ".join(a)) #USE SPACE TO JOIN THEM TOGETHER 
 
 
 
@@ -57,13 +63,16 @@ b = int(input("please input b :"))
 c = int(input("please input c :"))
 n = int(input("please input n :"))
 
-def check_fermat(a, b, c, n):
-    calc = math.pow(a,n) + math.pow(b,n) 
-    result = math.pow(c,n)
-    if (calc == result) and (n > 2):
-        print("Holy smokes, Fermat was wrong!")
-    else:
-        print("No, that doesn’t work")
+# def check_fermat(a, b, c, n):
+#     calc = math.pow(a,n) + math.pow(b,n) 
+#     result = math.pow(c,n)
+#     if (calc == result) and (n > 2):
+#         print("Holy smokes, Fermat was wrong!")
+#     else:
+#         print("No, that doesn’t work")
 
 check_fermat(a,b,c,n)
+
+
+
 
