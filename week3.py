@@ -89,40 +89,40 @@ import random as rd
 #         print("Invalid Input")
 
 ###### LIST OPERATIONS
-list1 = [4, 3, 5, 6, 7, 8]
-list2 = [9, 4,2, 5, 7,9]
+# list1 = [4, 3
 
-list3 = list1
-list1[0] = 50
-print(list1)
-print(list3)
+###### ROCK, PAPER, SCISSORS
 
-list4 = list2.copy()
-print(list4)
+print("Welcome to Rock , Paper , Scissor Game!!")
 
-print(list1 + list2)
-list1.append(56)  #add element to the end of the list
-print(list1)
+gamer_choice =  input("Choose one: ROCK , PAPER or SCISSORS :").lower()
+comp_choice = ["rock", "paper", "scissors"]
+# rd.shuffle(comp_choice)
+comp_choice = rd.choice(comp_choice)
+print(f"comp_choice {comp_choice}")
+print(gamer_choice)
 
-list1.append(list2)   #this givs a nested list
-print(list1)
+if gamer_choice == "rock" and comp_choice == "scissors":
+    print("You win")
 
-list1.extend(list2)
-print(list1)
+elif gamer_choice == "scissors" and comp_choice == "paper":
+    print("You win")
 
-list1.insert(3, "Inserted")
-print(list1)
+elif gamer_choice == "paper" and comp_choice == "rock":
+    print("You win")
 
-list1.remove(7)
-print(list1)
+elif gamer_choice == "paper" and comp_choice == "scissors":
+    print("You Lose!")
 
-a = list2.pop(4)
-print(a)
-print(list2)
+elif gamer_choice == "scissors" and comp_choice == "rock":
+    print("You Lose") 
 
-list2.sort
-print(list2)
+elif gamer_choice == "rock" and comp_choice == "paper":
+    print("You Lose!")      
 
-list1.reverse()
+elif gamer_choice == comp_choice:
+    print("It's a Draw")
+else:
+    "Invalid input"
 
-print(list1)
+    
