@@ -77,30 +77,40 @@
 # print(" ".join(a)) #USE SPACE TO JOIN THEM TOGETHER 
 
 ####### FILTER FUNCTION
-a = range(1, 10)
+# a = range(1, 10)
 
-odd = list(filter(lambda x: x % 2 == 1, a))
-print(odd)
-even = list(filter(lambda x: x % 2 == 0, a))
-print(even)
+# odd = list(filter(lambda x: x % 2 == 1, a))
+# print(odd)
+# even = list(filter(lambda x: x % 2 == 0, a))
+# print(even)
 
 
-my_set = {1,2,3,4,5,6,7,8,9}
-my_set2 = {1,2,3,4,16,7,12,24}
-my_set.discard(5)
-print(my_set)
+# my_set = {1,2,3,4,5,6,7,8,9}
+# my_set2 = {1,2,3,4,16,7,12,24}
+# my_set.discard(5)
+# print(my_set)
 
-my_set.discard(100)
-print(my_set)
+# my_set.discard(100)
+# print(my_set)
 
-my_set.remove(2)
-print(my_set)
+# my_set.remove(2)
+# print(my_set)
 
-# my_set.remove(100)
-print(my_set)
+# # my_set.remove(100)
+# print(my_set)
 
-my_set.add(13)
-print(my_set)
+# my_set.add(13)
+# print(my_set)
 
+# my_name = "chi" * 4
+# print(my_name)
+
+text = "AAA"
+print(text.find("a"))
+
+print("+", " -" * 4, "+", " -" * 4,"+" )
+for i in range(1,4):
+    print("|", " " *8,"|", " " *8,"|" )
+    print("\n")
 
 

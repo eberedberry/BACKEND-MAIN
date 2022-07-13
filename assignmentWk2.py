@@ -58,10 +58,11 @@ check_fermat(3,4,5,3)
 
 
 #### NO 6
-a = int(input("please input a :"))
-b = int(input("please input b :"))
-c = int(input("please input c :"))
-n = int(input("please input n :"))
+def get_data():
+    a = int(input("please input a :"))
+    b = int(input("please input b :"))
+    c = int(input("please input c :"))
+    n = int(input("please input n :"))
 
 # def check_fermat(a, b, c, n):
 #     calc = math.pow(a,n) + math.pow(b,n) 
@@ -71,7 +72,9 @@ n = int(input("please input n :"))
 #     else:
 #         print("No, that doesn’t work")
 
-check_fermat(a,b,c,n)
+    check_fermat(a,b,c,n)
+
+get_data()
 
 
 
