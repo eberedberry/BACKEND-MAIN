@@ -1,5 +1,5 @@
 ##### DICTIONARY
-from numpy import sort
+
 
 
 data = {
@@ -99,16 +99,71 @@ sample_data = {"V":"S001",
 #     if data == 5:
 #         break
 
-a = 10
-count = 0
+# a = 10
+# count = 0
 
-while a > 0:
-    print(a)
-    a-=1
-    count += 1
-    if count == 3:
-        break
+# while a > 0:
+#     print(a)
+#     a-=1
+#     count += 1
+#     if count == 3:
+#         break
 
+
+# first_name = "Chidiebere"
+# # print(len(first_name))
+# # print(first_name[20])
+
+# count = 0
+# while count < len(first_name):
+#     print(first_name[count])
+#     count += 1
+
+# prefixes = 'JKLMNOPQ'
+
+# count = 0
+# suffix = 'ack'
+# for i in prefixes:
+#     if prefixes[count] == "Q" or prefixes[count] == "O":
+#         print(f"{prefixes[count]}u{suffix}")
+#     else:
+#         print(prefixes[count] + suffix)
+#     count +=1
+
+text = "learning backend with django in Univelcity has been eye opening \
+so i am really grateful for the opportunity but it seems like its going \
+to ba a long road, i hope when i am donr, i can related well to all things\
+and be a better person"
+# print(text)
+# print("\n")
+
+long_text = """This planet has - or rather had - a problem, which was 
+this: most of the people living on it were unhappy for pretty much
+of the time. Many solutions were suggested for this problem, but
+most of these were largely concerned with the movements of small
+green pieces of paper, which is odd because on the whole it wasn't
+the small green pieces of paper that were unhappy"""
+# print(long_text)
+
+sample_text = "Another example"
+# print(len(sample_text))
+# print("\n")
+# print(sample_text[0:-8])
+# sample_text[3] = 5  #you cannot reassign  a cahracter in astring to abother thing cos string are immutable 
+# print(sample_text)
+# word = "bazinga"
+# print(word[2:])
+# word2 = word.upper()
+# print(word2)
+# word3 = word2.lower()
+# print(word3)
+
+pray = "        prayer is the key        "
+pray1 = "this has trailing right space          "
+pray2 = "        prayer is the key. this has trailinf left space"
+print(pray.strip())
+print(pray1.rstrip())
+print(pray2.lstrip())
 
 
 
